@@ -10,7 +10,7 @@ export default {
     },
     logOut() {
         window.localStorage.removeItem('token');
-        alert('Current session has ended. Please log in again.');
+        // alert('Current session has ended. Please log in again.');
     },
     deleteUser() {
         window.localStorage.removeItem('token');
