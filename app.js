@@ -57,33 +57,33 @@ app.use(express.static('app_client/build'));
 
 models.sequelize.sync({ force: isDev }).then(function () {
 
-    const saltArr = [authCtrl._generateSalt(), authCtrl._generateSalt(), authCtrl._generateSalt(), authCtrl._generateSalt()];
-    if (isDev) {
+    // const saltArr = [authCtrl._generateSalt(), authCtrl._generateSalt(), authCtrl._generateSalt(), authCtrl._generateSalt()];
+    // if (isDev) {
 
 
-        models.User.bulkCreate([
-            {
-                email: "josh@spears.com",
-                salt: saltArr[0],
-                hash: authCtrl._generateHash("joshspears", saltArr[0])
-            },
-            {
-                email: "jason@daniel.com",
-                salt: saltArr[1],
-                hash: authCtrl._generateHash("jasondaniel", saltArr[1])
-            },
-            {
-                email: "melodie@chi.com",
-                salt: saltArr[2],
-                hash: authCtrl._generateHash("melodiechi", saltArr[2])
-            },
-            {
-                email: "rey@adam.com",
-                salt: saltArr[3],
-                hash: authCtrl._generateHash("reyadamcruz", saltArr[3])
-            }
-        ])
-    } // END IF 
+    //     models.User.bulkCreate([
+    //         {
+    //             email: "josh@spears.com",
+    //             salt: saltArr[0],
+    //             hash: authCtrl._generateHash("joshspears", saltArr[0])
+    //         },
+    //         {
+    //             email: "jason@daniel.com",
+    //             salt: saltArr[1],
+    //             hash: authCtrl._generateHash("jasondaniel", saltArr[1])
+    //         },
+    //         {
+    //             email: "melodie@chi.com",
+    //             salt: saltArr[2],
+    //             hash: authCtrl._generateHash("melodiechi", saltArr[2])
+    //         },
+    //         {
+    //             email: "rey@adam.com",
+    //             salt: saltArr[3],
+    //             hash: authCtrl._generateHash("reyadamcruz", saltArr[3])
+    //         }
+    //     ])
+    // } // END IF 
 
 
     app.listen(PORT, () => console.log(`\nApp listening on PORT: ${PORT}`)); // END LISTEN
