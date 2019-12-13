@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rey-adam/Triply.git"
+    "url": "git+https://github.com/JDarron/Triply.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rey-adam/Triply/issues"
+    "url": "https://github.com/JDarron/Triply/issues"
   },
-  "homepage": "https://github.com/rey-adam/Triply#readme"
+  "homepage": "https://github.com/JDarron/Triply#readme"
 }
