@@ -86,6 +86,6 @@ models.sequelize.sync({ force: isDev }).then(function () {
     } // END IF 
 
 
-    app.listen(PORT, () => console.log(`App listening on PORT: ${PORT}`)); // END LISTEN
+    app.listen(PORT, () => console.log(`\nApp listening on PORT: ${PORT}`)); // END LISTEN
 
 }); // END SYNC 
