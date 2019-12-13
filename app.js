@@ -83,39 +83,9 @@ models.sequelize.sync({ force: isDev }).then(function () {
                 hash: authCtrl._generateHash("reyadamcruz", saltArr[3])
             }
         ])
-        // .then(() => {
-        //     return models.Trip.bulkCreate(
-        //         tripData
-        //     ); // END CREATE
-        // }).then(() => {
-        //     return models.Location.bulkCreate(
-        //         locationData
-        //     ); // END CREATE
-        // }).then(() => {
-        //     return models.Trail.bulkCreate(
-        //         trailData
-        //     ); // END CREATE
-        // }).then(() => {
-        //     return models.Campsite.bulkCreate(
-        //         campData
-        //     ); // END CREATE
-        // }).then(() => {
-        //     return models.Activity.bulkCreate(
-        //         activityData
-        //     ); // END CREATE
-        // }).then(() => {
-        //     models.VisitorCenter.bulkCreate(
-        //         centerData
-        //     ); // END CREATE
-        // }
-        // ); // END CREATE
     } // END IF 
 
 
-    app.listen(PORT, function () {
-        console.log("=============================");
-        console.log("App listening on PORT " + PORT);
-        console.log("=============================");
-    }); // END LISTEN
+    app.listen(PORT, () => console.log(`App listening on PORT: ${PORT}`)); // END LISTEN
 
 }); // END SYNC 

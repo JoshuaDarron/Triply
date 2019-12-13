@@ -2,7 +2,7 @@
   "name": "trippy",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://triply-jds.herokuapp.com/",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "axios": "^0.18.0",
     "create-react-class": "^15.6.3",
